@@ -1,6 +1,6 @@
 # SelfDrivingCar-P6-Kalman-Filter
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)  
-Udacity CarND Term 2  
+Udacity CarND Term 2  - Project 1 
 ---
 
 ## Dependencies
