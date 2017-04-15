@@ -27,10 +27,10 @@ Udacity CarND Term 2  - Project 1
 
 ## Files in the `src` Folder
 
-* main.cpp - reads in data, calls a function to run the Kalman filter, calls a function to calculate RMSE
-* FusionEKF.cpp - initializes the filter, calls the predict function, calls the update function
-* kalman_filter.cpp- defines the predict function, the update function for lidar, and the update function for radar
-* tools.cpp- function to calculate RMSE and the Jacobian matrix
+* `main.cpp` - reads in data, calls a function to run the Kalman filter, calls a function to calculate RMSE
+* `FusionEKF.cpp` - initializes the filter, calls the predict function, calls the update function
+* `kalman_filter.cpp` - defines the predict function, the update function for lidar, and the update function for radar
+* `tools.cpp` - function to calculate RMSE and the Jacobian matrix
 
 ## How the Files Relate to Each Other
 Here is a brief overview of what happens when you run the code files:
