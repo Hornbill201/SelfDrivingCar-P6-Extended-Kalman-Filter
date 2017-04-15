@@ -24,3 +24,17 @@ Udacity CarND Term 2  - Project 1
 4. Run it: `./ExtendedKF path/to/input.txt path/to/output.txt`. You can find
    some sample inputs in 'data/'.
     - eg. `./ExtendedKF ../data/sample-laser-radar-measurement-data-1.txt output.txt`
+
+## Files in the `src` Folder
+
+* main.cpp - reads in data, calls a function to run the Kalman filter, calls a function to calculate RMSE
+* FusionEKF.cpp - initializes the filter, calls the predict function, calls the update function
+* kalman_filter.cpp- defines the predict function, the update function for lidar, and the update function for radar
+* tools.cpp- function to calculate RMSE and the Jacobian matrix
+
+## How the Files Relate to Each Other
+Here is a brief overview of what happens when you run the code files:
+
+* `Main.cpp` reads in the data and sends a sensor measurement to FusionEKF.cpp
+* `FusionEKF.cpp` takes the sensor data and initializes variables and updates variables. The Kalman filter equations are not in this file. `FusionEKF.cpp` has a variable called `ekf_`, which is an instance of a KalmanFilter class. The `ekf_` will hold the matrix and vector values. We also use the `ekf_` instance to call the predict and update equations.
+* The KalmanFilter class is defined in `kalman_filter.cpp` and `kalman_filter.h`.
