@@ -1,9 +1,10 @@
 #include <iostream>
 #include "tools.h"
 
-#define EPS 0.001;
-#define EPS 0.0001;
+#define EPS 0.0001
+#define EPS2 0.000001
 
+using namespace std;
 using Eigen::VectorXd;
 using Eigen::MatrixXd;
 using std::vector;
@@ -50,7 +51,7 @@ MatrixXd Tools::CalculateJacobian(const VectorXd& x_state) {
 	float vx = x_state(2);
 	float vy = x_state(3);
 
-	if(fabs(px) < EPS and fabs(py) < EPS){
+	if(fabs(px) < EPS && fabs(py) < EPS){
 		px = EPS;
 		py = EPS;
 	}
@@ -62,7 +63,7 @@ MatrixXd Tools::CalculateJacobian(const VectorXd& x_state) {
 	if(fabs(c1)<EPS2){
 	    cout << "CalculationJacobian () - Error - Division by Zero - Corrected" << endl;
 	    //return Hj;
-		c1 = EPS2;
+		c1 = EPS2;  // if the c1 is too small we set it to be EPS2
 	}
 	 
 	float c2 = sqrt(c1);
