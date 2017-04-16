@@ -53,6 +53,6 @@ The following figures are generated in the [Visualization Tool](https://d17h27t6
 ![img](figs/lidar.png)  
 * The third one is the performance of the Kalman filter when inputing only *Radar* measurements.
 ![img](figs/radar.png)  
-From the figures above we can find that the Kalman Filter has better performance (higher accuracy/lower RMSE) on the *Lidar* measurement inputs than the *Radar* measurement inputs. The reason is that in the *Radar* measurement processing, we use some non-linear function and the Taylor Expansion approximation, and this process may lose some useful information. 
+From the figures above we can find that the Kalman Filter has better performance (higher accuracy/lower RMSE) on the __Lidar__ measurement inputs than the *Radar* measurement inputs. The reason is that in the *Radar* measurement processing, we use some non-linear function and the Taylor Expansion approximation, and this process may lose some useful information. 
 
 ### I provide a [demo video on Youtube](https://youtu.be/CEDF6f-11Gg) which shows the real time performance of the Kalman Filter when the car is driving.  
