@@ -46,3 +46,6 @@ Here is a brief overview of what happens when you run the code files:
 * The `px, py, vx, vy` output coordinates have an `RMSE = [0.185548, 0.190294, 0.47589, 0.805973]` when using the file: `sample-laser-radar-measurement-data-2.txt`.  
 
 ### Data Visualization 
+![img](figs/fusion.png)  
+![img](figs/lidar.png)  
+![img](figs/radar.png)
