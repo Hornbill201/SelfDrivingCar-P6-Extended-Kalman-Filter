@@ -38,3 +38,26 @@ Here is a brief overview of what happens when you run the code files:
 * `Main.cpp` reads in the data and sends a sensor measurement to FusionEKF.cpp
 * `FusionEKF.cpp` takes the sensor data and initializes variables and updates variables. The Kalman filter equations are not in this file. `FusionEKF.cpp` has a variable called `ekf_`, which is an instance of a KalmanFilter class. The `ekf_` will hold the matrix and vector values. We also use the `ekf_` instance to call the predict and update equations.
 * The KalmanFilter class is defined in `kalman_filter.cpp` and `kalman_filter.h`.
+
+## Simulation Results
+
+### RMSE Outputs for the Sample Inputs
+* `sample-laser-radar-measurement-data-1.txt`  
+```
+Accuracy - RMSE:
+0.0651648
+0.0605379
+ 0.533212
+ 0.544193
+ ```
+* `sample-laser-radar-measurement-data-2.txt`
+```
+Accuracy - RMSE:
+0.185548
+0.190294
+ 0.47589
+0.805973
+```
+
+
+
