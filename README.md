@@ -42,22 +42,7 @@ Here is a brief overview of what happens when you run the code files:
 ## Simulation Results
 
 ### RMSE Outputs for the Sample Inputs
-* `sample-laser-radar-measurement-data-1.txt`  
-```
-Accuracy - RMSE:
-0.0651648
-0.0605379
- 0.533212
- 0.544193
- ```
-* `sample-laser-radar-measurement-data-2.txt`
-```
-Accuracy - RMSE:
-0.185548
-0.190294
- 0.47589
-0.805973
-```
+* The `px, py, vx, vy` output coordinates have an `RMSE = [0.0651648, 0.0605379, 0.533212, 0.544193]` when using the file: `sample-laser-radar-measurement-data-1.txt`.  
+* The `px, py, vx, vy` output coordinates have an `RMSE = [0.185548, 0.190294, 0.47589, 0.805973]` when using the file: `sample-laser-radar-measurement-data-2.txt`.  
 
-
-
+### Data Visualization 
